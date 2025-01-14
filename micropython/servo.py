@@ -2,9 +2,9 @@ from machine import Pin,PWM
 from math import radians, degrees
 
 class Servo:
-    ''' A simple servo library
+    ''' A simple servo library to go from -90 degrees to 90 degrees
     '''
-    def __init__(self,pin,min_us=544.0,max_us=2400.0,min_deg=0.0,max_deg=180.0,freq=200):
+    def __init__(self,pin,min_us=544.0,max_us=2400.0,min_deg=0.0,max_deg=180.0,freq=50):
         self.pwm = PWM(Pin(pin))
         self.pwm.freq(freq)
         self.current_us = 0.0
@@ -18,6 +18,7 @@ class Servo:
         self.pwm.duty_ns(int(self.current_us*1000.0))
 
     def write(self,deg):
+        deg = max(-90, min(deg,90)) + 90
         self.write_us(radians(deg)*self.slope+self.offset)
 
     def read(self):
