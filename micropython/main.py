@@ -13,9 +13,9 @@ servo0 = servo.Servo(0)
 servo1 = servo.Servo(1)
 servo2 = servo.Servo(2)
 
-servo0.write_angle(90)
-servo1.write_angle(90)
-servo2.write_angle(90)
+servo0.write(90)
+servo1.write(90)
+servo2.write(90)
 
 display.rect(10,10,60,50,1)
 display.text('Good Morning', 0, 0, 1)
