@@ -9,16 +9,16 @@
 	<Property Name="NI.XItem.Express" Type="Bool">false</Property>
 	<Property Name="NI.XItem.Name" Type="Str">XControl 1</Property>
 	<Property Name="NI.XItem.SupportsFatalErrorOut" Type="Bool">false</Property>
-	<Item Name="port_data.ctl" Type="Ability VI" URL="../port_data.ctl">
+	<Item Name="port_data.ctl" Type="Ability VI" URL="/&lt;userlib&gt;/SerialVIs/subs/port_data.ctl">
 		<Property Name="NI.XItem.Name" Type="Str">Data</Property>
 	</Item>
-	<Item Name="port_facade.vi" Type="Ability VI" URL="../port_facade.vi">
+	<Item Name="port_facade.vi" Type="Ability VI" URL="/&lt;userlib&gt;/SerialVIs/subs/port_facade.vi">
 		<Property Name="NI.XItem.Name" Type="Str">Facade</Property>
 	</Item>
-	<Item Name="port_init.vi" Type="Ability VI" URL="../port_init.vi">
+	<Item Name="port_init.vi" Type="Ability VI" URL="/&lt;userlib&gt;/SerialVIs/subs/port_init.vi">
 		<Property Name="NI.XItem.Name" Type="Str">Init</Property>
 	</Item>
-	<Item Name="port_state.ctl" Type="Ability VI" URL="../port_state.ctl">
+	<Item Name="port_state.ctl" Type="Ability VI" URL="/&lt;userlib&gt;/SerialVIs/subs/port_state.ctl">
 		<Property Name="NI.XItem.Name" Type="Str">State</Property>
 	</Item>
 </XControl>
