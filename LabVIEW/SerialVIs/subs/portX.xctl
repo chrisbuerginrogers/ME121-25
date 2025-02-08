@@ -15,10 +15,10 @@
 	<Item Name="port_facade.vi" Type="Ability VI" URL="/&lt;userlib&gt;/SerialVIs/subs/port_facade.vi">
 		<Property Name="NI.XItem.Name" Type="Str">Facade</Property>
 	</Item>
-	<Item Name="port_init.vi" Type="Ability VI" URL="/&lt;userlib&gt;/SerialVIs/subs/port_init.vi">
-		<Property Name="NI.XItem.Name" Type="Str">Init</Property>
-	</Item>
 	<Item Name="port_state.ctl" Type="Ability VI" URL="/&lt;userlib&gt;/SerialVIs/subs/port_state.ctl">
 		<Property Name="NI.XItem.Name" Type="Str">State</Property>
+	</Item>
+	<Item Name="portX_init.vi" Type="Ability VI" URL="/&lt;userlib&gt;/SerialVIs/subs/portX_init.vi">
+		<Property Name="NI.XItem.Name" Type="Str">Init</Property>
 	</Item>
 </XControl>
