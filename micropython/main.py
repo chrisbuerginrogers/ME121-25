@@ -1,9 +1,9 @@
 import machine
-from machine import I2C
+from machine import SoftI2C
 from machine import Pin
 import ssd1306
 
-i2c = I2C(scl = Pin(23), sda = Pin(22))
+i2c = SoftI2C(scl = Pin(23), sda = Pin(22))
 #this might give you a depreciation warning - you can ignore it
 
 display = ssd1306.SSD1306_I2C(128, 64,i2c)
